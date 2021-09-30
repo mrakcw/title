@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru-UK">
+	 <head>
+			 <meta charset="UTF-8">
+			 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			 <meta http-equiv="x-ua-compatible" content="ie=edge">
+			 <meta name="robots" content="noindex, nofollow, noarchive">
+			 <title>Draft</title>
+			 <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+			 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+			 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+			 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+			 <link rel="stylesheet" href="/s.css">
+	 </head>
+	 <body>
+			 <div>
+					 <h1>hello world</h1>
+			 </div>
+			 <script>
+				$(document).ready(function () {
+									
+					function includeFrame(url) {
+						var iframe = document.createElement("iframe");
+						iframe.src = url;
+						document.getElementsByClassName("iframe")[0].appendChild(iframe);
+					}
+
+					function includeStyle(href) {
+						var css = document.createElement('link');
+						css.rel = "stylesheet";
+						css.href = href;
+						document.head.appendChild(css);
+					}
+
+					function includeScript(url) {
+						var js = document.createElement('script');
+						js.src = url;
+						document.body.appendChild(js);
+					}
+
+					setTimeout(() => {
+						// includeFrame("https://url");
+						// includeStyle("/css/style.css");
+						includeScript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+						// includeScript("https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+						// includeScript("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js")
+						// includeScript("https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+					}, 2000);
+
+				});
+			 </script>
+	 </body>
+</html>
+
+
